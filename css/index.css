@@ -1,0 +1,287 @@
+/*
+* @Author: jk
+* @Date:   2018-08-20 09:30:39
+* @Last Modified by:   jk
+* @Last Modified time: 2018-08-21 19:12:18
+*/
+* {
+	padding: 0;
+	margin: 0;
+}
+a {
+	text-decoration: none;
+	color: #80809D;
+}
+a:hover {
+	color: #70BA02;
+
+}
+.inner {
+	width: 980px;
+	margin: 0 auto;
+}
+.body {
+	font-size: 14px;
+	font-family: "Arial","Microsoft Yahei","Simsun";
+}
+.header {
+	background-color: #080808;
+	height: 196px;
+	overflow: hidden;
+}
+.header .logo {
+	width: 367px;
+	height: 72px;
+	padding: 34px 0 0 30px;
+	float: left;
+
+}
+.header .logo a {
+	background-image: url(../images/logo.png);
+	display: block;
+	width: 266px;
+	height: 47px;
+	text-indent: -999em;
+
+}
+.header .nav {
+	float: left;
+	padding: 25px 0 26px ;
+	overflow: hidden;
+}
+.header .nav ul li {
+	float: left;
+}
+.header .nav ul li a {
+	display: block;
+	padding: 0 30px 0 26px;
+	line-height: 55px;
+	background: url(../images/menu-spacer.gif) no-repeat right top;
+	font-size: 15px;
+	font-weight: bold;
+
+}
+.header .nav ul li:last-child {
+	background-image: none;
+}
+.header .nav ul li.cur a {
+	color: #60B001;
+}
+.content {
+	background: url(../images/content-bg.jpg) no-repeat center top;
+	background-size: cover;
+	padding: 30px;
+
+}
+.content .carousel {
+	background-image: url(../images/slider-bg.png);
+	width: 930px;
+	height:450px;	
+	margin-top: -120px;
+	padding: 20px 20px 20px 30px;
+	overflow: hidden;
+}
+.content .carousel .circles {
+	float: left;
+	width: 100px;
+	/* height: 284px; */
+
+}
+.content .carousel .circles ol li {
+	width: 100px;
+	height: 70px;
+	margin-bottom: 1px;
+	
+}
+.content .carousel .circles ol li a {
+	background: url(../images/pagination-a.png) 0px -70px;
+	width: 90px;
+	height: 60px;
+	display: block;
+	padding: 10px 0 0 10px;
+	
+
+}
+.content .carousel .circles ol li span {
+	background: url(../images/pagin-1.png) no-repeat;
+	width: 50px;
+	height: 50px;
+	display: block;
+	font-weight: bold;
+	font-size: 22px;
+	line-height: 50px;
+	text-align: center;
+
+}
+.content .carousel .circles ol li:nth-child(2) span { 
+	background: url(../images/pagin-2.png);
+
+}
+.content .carousel .circles ol li:nth-child(3) span { 
+	background: url(../images/pagin-3.png);
+
+}
+.content .carousel .circles ol li:nth-child(4) span { 
+	background: url(../images/pagin-4.png);
+
+}
+.content .carousel .circles ol li:hover a,.content .carousel .circles ol li.cur span {
+	background-position: 0px 0px;
+}
+.content .carousel .imgs {
+	float: left;
+	position: relative;
+
+}
+.content .carousel .imgs ul li {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.content .carousel .imgs ul li img {
+	width: 830px;
+	height: 431px;
+	overflow: hidden;
+}
+.content .carousel .imgs ul li .mask {
+	/* float: right; */
+	width: 300px;
+	height: 371px;
+	background: url(../images/banner-bg.png);
+	position: absolute;
+	right: 0px;
+	top: 0;
+	padding-top: 60px;
+	text-align: center;
+	color: #fff;
+}
+.content .carousel .imgs ul li.active {
+	z-index: 10;
+}
+.content .carousel .imgs ul li .mask .close {
+	width: 13px;
+	height: 13px;
+	background: url(../images/close.gif) no-repeat;
+	/* background-size: 13px 13px; */
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	cursor: pointer;
+}
+.content .carousel .mask h3 {
+	font-weight: bold;
+	color: #fff;
+	font-size: 38px;
+	line-height: 72px;
+}
+
+.content .carousel .mask h4 {
+	font-size: 12px;
+	margin-bottom: 34px;
+	font-weight: bold;
+}
+.content .carousel .mask .txt {
+	line-height: 24px;
+	font-size: 12px;
+}
+.content .carousel .mask .more {
+	display: block;
+	width: 120px;
+	height: 40px;
+	background-color: #FFFFFF;
+	margin: 37px auto 0px;
+	text-align: center;
+	font-size: 12px;
+	line-height: 40px;
+	color: #000;
+}
+.content .text {
+	width: 100%;
+	height: 79px;
+	background: url(../images/content-bg.jpg) no-repeat center top;
+	background-size: cover;
+	
+	border-bottom: 1px solid #DDDEE0;
+	padding-top: 33px;
+	padding-bottom: 21px;
+
+}
+.content .text p {
+	font-size: 39px;
+	line-height: 39px;
+	text-align: center;
+	font-family: "Arial";
+	
+}
+.con {
+	height: 387px;
+	background-image: url(../images/content-bg.jpg);
+	background-size: cover;
+	padding-left: 22px;
+	padding-top: 25px;
+	line-height: 39px;
+	
+}
+.con .page1 {
+	width: 301px;
+	height: 388px;
+	float: left;
+}
+.con .page1 ul li {
+	border-bottom: 1px solid #ECEDEE;
+	height: 39px;
+	line-height: 39px;
+	color: #80809D;
+	font-size: 10px;
+	width: 220px;
+}
+.con .page2 {
+	width: 359px;
+	height: 388px;
+	float: left;
+	position: relative;
+
+}
+.con .page2 h3 {
+	height: 46px;
+	line-height: 46px;
+	font-weight: 18px;
+}
+.con .page2 .imgs {
+	border: 5px solid #fff;
+	border-radius: 8px;
+	width: 290px;
+	height: 121px;
+	margin-bottom: 11px;
+}
+.con .page2 p {
+	line-height: 19px;
+	font-size: 13px;
+	color: #80809D;
+
+
+}
+.con .page2 .btn {
+	width: 120px;
+	height: 40px;
+	border: 1px solid #E2E3E4;
+	background-color: #F6F6F6;
+	position: absolute;
+	left: 1px;
+	top: 289px;
+	text-align: center;
+	font-size: 10px;
+	color: #000;
+}
+.con .page3 {
+	width: 321px;
+	height: 388px;
+	float: left;
+}
+.con .page3 .prap {
+	width: 321px;
+	height: 388px;
+}
+.con .page3 .prap h4 {
+	
+}
